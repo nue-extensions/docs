@@ -1,0 +1,33 @@
+{
+    "name": "nue-extensions/docs",
+    "description": "Description...",
+    "type": "library",
+    "keywords": ["nue", "extension"],
+    "homepage": "https://github.com/nue-extensions/docs",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Noviyanto Rahmadi",
+            "email": "novay@btekno.id"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "novay/nue": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nue\\Docs\\": "src/"
+        }, 
+        "files": [
+            "src/Helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Nue\\Docs\\Providers\\DocsServiceProvider"
+            ]
+        }
+    }
+}
